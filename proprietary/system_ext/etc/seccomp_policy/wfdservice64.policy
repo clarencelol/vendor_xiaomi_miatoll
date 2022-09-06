@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# Copyright (c) 2021, 2022 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc
 #
@@ -77,3 +77,4 @@ getdents64: 1
 dup: 1
 lseek: 1
 tgkill: 1
+process_vm_readv: 1
