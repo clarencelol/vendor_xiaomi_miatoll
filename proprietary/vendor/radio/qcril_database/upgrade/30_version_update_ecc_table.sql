@@ -5,19 +5,14 @@
 */
 BEGIN TRANSACTION;
 INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 30);
-
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '257' AND  MNC = '01' AND NUMBER = '102';
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '257' AND  MNC = '01' AND NUMBER = '103';
-DELETE FROM qcril_emergency_source_mcc_mnc_table where MCC = '257' AND  MNC = '01' AND NUMBER = '104';
-INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('257','01','102','','limited');
-INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('257','01','103','','limited');
-INSERT INTO "qcril_emergency_source_mcc_mnc_table" VALUES('257','01','104','','limited');
-
-DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '257' AND  MNC = '01' AND NUMBER = '102';
-DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '257' AND  MNC = '01' AND NUMBER = '103';
-DELETE FROM qcril_emergency_source_voice_mcc_mnc_table where MCC = '257' AND  MNC = '01' AND NUMBER = '104';
-INSERT INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('257','01','102','','full');
-INSERT INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('257','01','103','','full');
-INSERT INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('257','01','104','','full');
-
+DELETE FROM qcril_emergency_source_voice_table  where MCC = '604' AND NUMBER = '15';
+DELETE FROM qcril_emergency_source_voice_table  where MCC = '604' AND NUMBER = '19';
+DELETE FROM qcril_emergency_source_voice_table  where MCC = '604' AND NUMBER = '177';
+DELETE FROM qcril_emergency_source_voice_table  where MCC = '604' AND NUMBER = '150';
+DELETE FROM qcril_emergency_source_voice_table  where MCC = '604' AND NUMBER = '190';
+INSERT INTO "qcril_emergency_source_voice_table" VALUES('604','15','','full');
+INSERT INTO "qcril_emergency_source_voice_table" VALUES('604','19','','full');
+INSERT INTO "qcril_emergency_source_voice_table" VALUES('604','177','','full');
+INSERT INTO "qcril_emergency_source_voice_table" VALUES('604','150','','full');
+INSERT INTO "qcril_emergency_source_voice_table" VALUES('604','190','','full');
 COMMIT TRANSACTION;

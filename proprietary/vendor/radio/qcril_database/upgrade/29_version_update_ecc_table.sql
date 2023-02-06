@@ -6,19 +6,13 @@
 BEGIN TRANSACTION;
 INSERT OR REPLACE INTO qcril_properties_table (property, value) VALUES ('qcrildb_version', 29);
 
-DELETE FROM qcril_emergency_source_escv_nw_table where MCC = '414' AND NUMBER = '199' AND ESCV = 1;
-DELETE FROM qcril_emergency_source_escv_nw_table where MCC = '414' AND NUMBER = '192' AND ESCV = 2;
-DELETE FROM qcril_emergency_source_escv_nw_table where MCC = '414' AND NUMBER = '191' AND ESCV = 4;
 
-INSERT INTO qcril_emergency_source_escv_nw_table VALUES('414','','199',1);
-INSERT INTO qcril_emergency_source_escv_nw_table VALUES('414','','192',2);
-INSERT INTO qcril_emergency_source_escv_nw_table VALUES('414','','191',4);
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '452' AND NUMBER = '113';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '452' AND NUMBER = '114';
+DELETE FROM qcril_emergency_source_voice_mcc_mnc_table  where MCC = '452' AND NUMBER = '115';
 
-DELETE FROM qcril_emergency_source_mcc_table where MCC = '222';
-
-INSERT INTO qcril_emergency_source_mcc_table VALUES('222','112','','');
-INSERT INTO qcril_emergency_source_mcc_table VALUES('222','911','','');
-INSERT INTO qcril_emergency_source_mcc_table VALUES('222','999','','');
-INSERT INTO qcril_emergency_source_mcc_table VALUES('222','08','','');
+INSERT INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('452','01','113','','');
+INSERT INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('452','01','114','','');
+INSERT INTO "qcril_emergency_source_voice_mcc_mnc_table" VALUES('452','01','115','','');
 
 COMMIT TRANSACTION;
