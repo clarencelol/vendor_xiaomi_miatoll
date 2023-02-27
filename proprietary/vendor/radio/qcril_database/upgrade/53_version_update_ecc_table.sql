@@ -18,7 +18,5 @@ DELETE FROM qcril_emergency_source_mcc_table where MCC = '222';
 
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','112','','');
 INSERT INTO qcril_emergency_source_mcc_table VALUES('222','911','','');
-INSERT INTO qcril_emergency_source_mcc_table VALUES('222','999','','');
-INSERT INTO qcril_emergency_source_mcc_table VALUES('222','08','','');
 
 COMMIT TRANSACTION;
