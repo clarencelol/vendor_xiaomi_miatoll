@@ -124,17 +124,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PowerOffAlarm",
-	owner: "xiaomi",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "xiaomi",
 	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
@@ -159,31 +148,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "DeviceInfo",
+	name: "PowerOffAlarm",
 	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "ImsRcsService",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/ImsRcsService/ImsRcsService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "QtiTelephony",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/QtiTelephony/QtiTelephony.apk",
+	apk: "proprietary/system_ext/app/PowerOffAlarm/PowerOffAlarm.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -195,17 +162,6 @@ android_app_import {
 	name: "QtiTelephonyService",
 	owner: "xiaomi",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "embms",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/embms/embms.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -379,13 +335,6 @@ dex_import {
 	name: "dpmapi",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "embmslibrary",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
 	system_ext_specific: true,
 }
 
