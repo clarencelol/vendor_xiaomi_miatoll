@@ -1263,9 +1263,9 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     DeviceInfo \
     ImsRcsService \
+    MotoSignatureApp \
     PowerOffAlarm \
     QtiTelephonyService \
-    MotoSignatureApp \
     MotoDolbyDax3 \
     MotorolaSettingsProvider \
     WfdService \
