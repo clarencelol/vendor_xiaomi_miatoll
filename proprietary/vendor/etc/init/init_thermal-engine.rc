@@ -7,7 +7,7 @@
 #Copyright (c) 2013-2018, The Linux Foundation. All rights reserved.
 #
 
-service thermal-engine /vendor/bin/thermal-engine
+service vendor.thermal-engine /vendor/bin/thermal-engine -c /vendor/etc/thermal-engine-${ro.boot.hwname}.conf
 	class main
 	user root
 	group root
@@ -17,4 +17,4 @@ service thermal-engine /vendor/bin/thermal-engine
 	socket thermal-send-rule stream 0660 system oem_2907
 
 on property:sys.boot_completed=1
-	restart thermal-engine
+	restart vendor.thermal-engine
